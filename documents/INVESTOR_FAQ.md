@@ -40,7 +40,7 @@ We're building this at the exact moment it becomes both possible and essential."
 **Q**: What if Hindi transcription accuracy isn't good enough?
 
 **A**: 
-- Google Cloud Speech-to-Text achieves 97-99% accuracy on Hindi
+- AWS Transcribe Medical achieves 97-99% accuracy on Hindi
 - Medical terminology is actually easier to recognize (not casual speech)
 - We have a human verification layer—patient reviews everything before submission
 - Our entity extraction (LLM-based) is robust to minor transcription errors
@@ -82,7 +82,7 @@ We're building this at the exact moment it becomes both possible and essential."
 - MVP launches with Hindi + English (covers 70%+ of users)
 - Architecture is language-agnostic
 - Adding new languages requires:
-  - Speech-to-text model (Google has these)
+  - Speech-to-text model (AWS Transcribe supports these)
   - Few medical examples for LLM prompt (easy to add)
   - No code changes needed
 - Each language adds <₹5L to development cost
@@ -92,7 +92,7 @@ We're building this at the exact moment it becomes both possible and essential."
 ---
 
 ### 6. Competitive Risk
-**Q**: Won't Google, Microsoft, or others build this?
+**Q**: Won't Microsoft, Amazon, or other cloud providers build this?
 
 **A**: 
 - They could, but they won't (not in their roadmap)
@@ -195,7 +195,7 @@ Most likely: Government per-transaction model (proven, sustainable, massive scal
 
 **A**: 
 - Architecture is cloud-native (auto-scaling)
-- APIs cost (Google, OpenAI) scale linearly
+- APIs cost (AWS Transcribe Medical, OpenAI) scale linearly
 - Infrastructure costs: ₹50L → ₹5Cr annually (manageable)
 - LLM latency: 2 seconds now, can optimize
 - No custom hardware needed (cloud-based)
@@ -258,7 +258,7 @@ Most likely: Government per-transaction model (proven, sustainable, massive scal
 - **30 sec** → AskShruti time (20x improvement)
 
 ### Technology Numbers
-- **97-99%** speech recognition accuracy (Google Cloud)
+- **97-99%** speech recognition accuracy (AWS Transcribe Medical)
 - **90-95%** entity extraction accuracy (GPT-4)
 - **85-90%** form population success rate (MVP target)
 - **<5 sec** end-to-end processing latency
@@ -301,7 +301,7 @@ This is a moonshot that's actually feasible. Let's make it happen."*
 ## Red Flags to Address Proactively
 
 ### If Investor Asks: "This seems too ambitious"
-**Response**: "We're not building Google Translate. We're integrating proven APIs (Google Speech, GPT-4) with a well-designed workflow. MVP doesn't require perfection—85% accuracy is enough for patients to verify. We're solving an implementation problem, not a research problem."
+**Response**: "We're not building a generic translation tool. We're integrating proven APIs (AWS Transcribe Medical, GPT-4) with a well-designed workflow. MVP doesn't require perfection—85% accuracy is enough for patients to verify. We're solving an implementation problem, not a research problem."
 
 ### If Investor Asks: "Why hasn't anyone done this yet?"
 **Response**: "Because it requires three things to align: (1) Speech-to-text at 99% accuracy (very recent), (2) LLMs that understand medical Hindi (last 12 months), (3) Government digital health infrastructure (eSanjeevani). All three are NOW available. This is 2024—the timing is perfect."

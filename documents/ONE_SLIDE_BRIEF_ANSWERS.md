@@ -3,7 +3,7 @@
 ## How is it different?
 
 - **Only platform combining 4 elements**: Voice-first + Vernacular Hindi + Healthcare-specialized + Form-integrated
-- Generic voice assistants (Google, Alexa) lack medical knowledge & form integration
+- Generic voice assistants (Alexa) lack medical knowledge & form integration
 - Speech-to-text tools don't extract data or populate forms
 - Chatbots lack healthcare domain expertise & elderly-first design
 - Telemedicine platforms have forms but no voice interface

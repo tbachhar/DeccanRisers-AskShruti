@@ -35,7 +35,7 @@ AskShruti! is fundamentally different from existing healthcare solutions because
 
 ---
 
-#### 2. **Generic Voice Assistants** (Google Assistant, Alexa, Siri)
+#### 2. **Generic Voice Assistants** (Alexa, Siri)
 **What They Do**:
 - General-purpose voice commands
 - Designed for casual tasks
@@ -61,7 +61,7 @@ AskShruti! is fundamentally different from existing healthcare solutions because
 
 ---
 
-#### 3. **Speech-to-Text Tools** (Google Translate, Azure Speech)
+#### 3. **Speech-to-Text Tools** (Azure Speech, AWS Transcribe)
 **What They Do**:
 - Convert speech to text in multiple languages
 - General-purpose transcription
@@ -173,7 +173,7 @@ AskShruti! is fundamentally different from existing healthcare solutions because
 | **30-Second Completion** | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅✅ |
 | **Ready to Deploy** | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 
-**Only AskShruti combines: Voice + Hindi + Medical + Form Integration + Elderly Design + Speed**
+**Only AskShruti combines: Voice + Hindi + Medical + Form Integration + Elderly Design + Speed + AWS Cloud Native**
 
 ---
 
@@ -460,8 +460,8 @@ Only then is form submitted ✅
 "AskShruti! is the only platform that combines voice-first interaction WITH vernacular language support FOR healthcare forms."
 
 **Why It Matters**:
-- Voice assistants exist (Google, Alexa), but NOT for healthcare forms
-- Speech-to-text tools exist (Google Translate), but they DON'T populate forms
+- Voice assistants exist (Alexa), but NOT for healthcare forms
+- Speech-to-text tools exist (Azure, AWS), but they DON'T populate forms
 - Chatbots exist (Rasa, Dialogflow), but they AREN'T pre-trained for medical Hindi
 - Forms exist, but they DON'T have voice interfaces
 
@@ -538,7 +538,7 @@ Only then is form submitted ✅
 
 **Why It Matters**:
 - Speech-to-text usually requires months of training on medical data
-- We use Google's medical-trained models (already >97% accurate)
+- We use AWS Transcribe Medical with medical-specialized models (already >97% accurate)
 - LLMs (GPT-4) already understand medical terminology in Hindi
 - Zero setup time, immediate deployment
 
@@ -565,7 +565,7 @@ Only then is form submitted ✅
 1. **Audio deletion** - Immediately after transcription (HIPAA-compliant)
 2. **Minimal storage** - Only what eSanjeevani stores (patient ultimately responsible)
 3. **Encrypted transmission** - TLS 1.3 for all data in flight
-4. **No third-party sharing** - Only Google (speech) & OpenAI (extraction) APIs
+4. **No third-party sharing** - Only AWS (speech) & OpenAI (extraction) APIs
 5. **User control** - Patients can request deletion anytime
 6. **Transparent logging** - Audit trail of all data access
 
@@ -729,7 +729,7 @@ Patient says: "Doctor said to reduce salt intake"
 | Problem | Solution | Proof |
 |---------|----------|-------|
 | **Time Barrier** | 20x faster (30 sec) | Design-proven |
-| **Language Barrier** | Hindi-native | Google API tested |
+| **Language Barrier** | Hindi-native | AWS Transcribe Medical tested |
 | **Literacy Barrier** | Natural speech | Conversation design |
 | **Motor Barrier** | Voice-only | No typing needed |
 | **Cognitive Barrier** | Guided flow | Conversation management |

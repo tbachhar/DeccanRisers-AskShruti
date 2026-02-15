@@ -116,15 +116,15 @@ graph TB
 
 #### Speech-to-Text
 
-- Google Cloud Speech-to-Text API (supports Hindi and English with medical vocabulary)
-- Alternative: Azure Speech Services or AWS Transcribe Medical
+- AWS Transcribe Medical (supports Hindi and English with medical vocabulary)
+- Alternative: Azure Speech Services
 - Streaming recognition for real-time feedback
 - Language-specific models with medical terminology support
 
 #### Entity Extraction
 
 - OpenAI GPT-4 or GPT-3.5 with medical prompt engineering
-- Alternative: Google PaLM 2 or Anthropic Claude
+- Alternative: Anthropic Claude or AWS Bedrock with medical models
 - Structured output format (JSON) for entity extraction
 - Few-shot prompting with medical examples in Hindi and English
 
